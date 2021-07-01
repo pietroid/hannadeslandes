@@ -1,0 +1,12 @@
+html{
+overflow: hidden;
+height: 100%;
+} 
+body {
+    height: 100%;
+    margin:0px;
+    overflow:auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(to bottom right,#09001D,#300046,#2D0059);
+}
