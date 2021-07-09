@@ -11,6 +11,9 @@ body {
     background-image: linear-gradient(to bottom right,#09001D,#300046,#2D0059);
 }
 
+a {
+    text-decoration: none !important;
+}
 
 /* mobile first */
 

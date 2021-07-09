@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from 'react'
 import '../components/buttons.css'
 
-export const Button = ({text}) => {
+export const Button = ({text, href}) => {
     return (
-        <div className = "button">
+        <a className = "button" href={href}>
             <p style={{userSelect: 'none', fontWeight:400}}>{text}</p>
-        </div>
+        </a>
     )
 }

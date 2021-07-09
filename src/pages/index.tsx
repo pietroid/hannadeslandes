@@ -24,8 +24,8 @@ const IndexPage = () => {
   return (
     <>
 <div className="contact_buttons">
-    <RoundButton icon={instagram} text="@raiodeiansa"/>
-    <RoundButton icon={whatsapp} text="(11) 99122-1246"/>
+    <RoundButton icon={instagram} text="@raiodeiansa" href="https://www.instagram.com/raiodeiansa/"/>
+    <RoundButton icon={whatsapp} text="(11) 99122-1246" href="https://wa.me/message/2CYPGMOMIGYXK1"/>
 </div>
 <Background/>
     <div style={{minHeight:'100vh'}}>
@@ -35,10 +35,6 @@ const IndexPage = () => {
     
       
     <div className="wrapper">
-      <div style={{width:0}}>
-    <p style={{whiteSpace: 'nowrap',
-    overflow: 'hidden',textOverflow: 'ellipsis-word'}}>TEXTOTEXTOTEXTO</p>
-    </div>
         
         <div className="centered_wrapper">
           <h1 className="centered_text_mobile">Precisa de ajuda?</h1>
@@ -46,9 +42,9 @@ const IndexPage = () => {
           <p id="intro_text">Você está com problemas na sua vida? Você não consegue mais lidar com eles? Se consulte para entender os motivos dos seus problemas e para descobrir como pode resolvê-los.</p>
           <div className="v_space"/>
           <div style={{display:'flex',flexDirection:'row'}}>          
-            <Button text="quem sou eu"/>
+            <Button text="quem sou eu" href="https://www.google.com.br"/>
             <div style={{width:'1em'}}/>
-            <Button text="saber mais"/>
+            <Button text="saber mais" href="https://www.google.com.br"/>
           </div>
           <div className="v_space"/>
         </div>
