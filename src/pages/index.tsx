@@ -28,7 +28,7 @@ const IndexPage = () => {
     <RoundButton icon={whatsapp} text="(11) 99122-1246"/>
 </div>
 <Background/>
-    <div style={{height:'100vh'}}>
+    <div style={{minHeight:'100vh'}}>
     <div className="header">
       <img className="logo" src={logoImage}/>
     </div>
