@@ -45,7 +45,11 @@ const IndexPage = () => {
           <div className="v_space"/>
           <p id="intro_text">Você está com problemas na sua vida? Você não consegue mais lidar com eles? Se consulte para entender os motivos dos seus problemas e para descobrir como pode resolvê-los.</p>
           <div className="v_space"/>
-          <Button text="saber mais"/>
+          <div style={{display:'flex',flexDirection:'row'}}>          
+            <Button text="quem sou eu"/>
+            <div style={{width:'1em'}}/>
+            <Button text="saber mais"/>
+          </div>
           <div className="v_space"/>
         </div>
         
