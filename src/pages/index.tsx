@@ -11,6 +11,7 @@ import ServicesCarousel from "../components/services_carousel"
 import Background from "../components/background"
 import { Button } from "../components/button"
 import { RoundButton } from "../components/round_button"
+import { GlowingImage } from "../components/glowing_image"
 /*const IndexPage = () => {
   return (
   <div>
@@ -55,6 +56,7 @@ const IndexPage = () => {
       
       </div>
     </div>
+
     <div className="wrapper">
       <div className="centered_wrapper">
           <h1 className="centered_text_mobile">Quem sou eu</h1>
@@ -67,12 +69,16 @@ Caros amigos, a contínua expansão de nossa atividade promove a alavancagem dos
       <div className="center_spacing"/>
 
       <div className="centered_wrapper">
-          <div className="service_image_wrapper">
-            <img src={hanna} className="box round shadow"/>
-          </div>
+        <div className="service_image_wrapper">
+          <GlowingImage image={hanna}/>
+        </div>
       </div>
+
     </div>
 
+    <div className="wrapper">
+          <h1 className="centered_text_mobile">O que eu faço</h1>
+      </div>
     </>
   )
 }

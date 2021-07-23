@@ -82,6 +82,7 @@ p {
 }
 .service_image_wrapper{
     max-width: 450px;
+    width: 100%;
     margin-left:-5vh;
     margin-right:-5vh;
     opacity:1;
