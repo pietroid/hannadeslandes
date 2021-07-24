@@ -12,6 +12,8 @@ import Background from "../components/background"
 import { Button } from "../components/button"
 import { RoundButton } from "../components/round_button"
 import { GlowingImage } from "../components/glowing_image"
+import { Card } from "../components/card"
+import { CardsSection } from "../components/cards_section"
 /*const IndexPage = () => {
   return (
   <div>
@@ -77,8 +79,9 @@ Caros amigos, a contínua expansão de nossa atividade promove a alavancagem dos
     </div>
 
     <div className="wrapper">
-          <h1 className="centered_text_mobile">O que eu faço</h1>
-      </div>
+      <h1 className="centered_text_mobile">O que eu faço</h1>
+      <CardsSection/>
+    </div>
     </>
   )
 }
