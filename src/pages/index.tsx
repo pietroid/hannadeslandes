@@ -59,6 +59,7 @@ const IndexPage = () => {
       </div>
     </div>
 
+    <div style={{minHeight:'100vh'}}>
     <div className="wrapper">
       <div className="centered_wrapper">
           <h1 className="centered_text_mobile">Quem sou eu</h1>
@@ -77,10 +78,13 @@ Caros amigos, a contínua expansão de nossa atividade promove a alavancagem dos
       </div>
 
     </div>
+    </div>
 
-    <div className="wrapper">
-      <h1 className="centered_text_mobile">O que eu faço</h1>
+    <div style={{minHeight:'100vh'}}>
+    <div className="centered_wrapper">
+      <h1 style={{textAlign:'center'}}>O que eu faço</h1>
       <CardsSection/>
+    </div>
     </div>
     </>
   )

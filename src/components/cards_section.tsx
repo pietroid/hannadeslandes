@@ -3,6 +3,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React, { useRef, useEffect } from 'react'
 import '../components/buttons.css'
 import { underscoreToReadableText } from '../utils/string_utils';
+import { Card } from './card';
 
 export const CardsSection = () => {
     return (
@@ -16,7 +17,7 @@ export const CardsSection = () => {
                 name
                 childImageSharp{
                     gatsbyImageData(
-                    width: 100
+                    width: 300
                     placeholder: NONE
                     )
                 }
@@ -31,15 +32,18 @@ export const CardsSection = () => {
             image: getImage(item.node),
             }));
             return (
-                <>
+                <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
                     {services.map(item => 
-                        <>
-                            <h1 className="centered_text">{item.name}</h1>
-                            <GatsbyImage loading="eager" image={item.image} alt='bla' />
-                        </>
-                    )
-                    }
-                </>
+                        <Card>
+                            <div className='centered_wrapper'>
+                                <GatsbyImage loading="eager" image={item.image} alt='bla' />
+                                <div style={{marginRight:10, marginLeft:10}}>
+                                <h2 className="centered_text">{item.name}</h2>
+                                </div>
+                            </div>
+                        </Card>
+                    )}
+                </div>
             )
         }
         }

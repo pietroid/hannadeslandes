@@ -82,10 +82,8 @@ export class ServicesCarousel extends React.Component<{},ServicesCarouselState> 
             return (
                 <div className="centered_wrapper">
                     <div ref={this.imageWrapperRef} className="service_image_wrapper">
-                      <Card>
                       <h1 className="centered_text">{currentService.name}</h1>
                       <GatsbyImage loading="eager" image={currentService.image} alt='bla' />
-                      </Card>
                     </div>
                 </div>
             )

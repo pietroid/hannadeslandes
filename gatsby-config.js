@@ -9,7 +9,7 @@ module.exports = {
       options: {
         fonts: [
           `libre baskerville\:400,700`,
-          `poppins:300,400`
+          `poppins:300,400,700`
         ],
         display: 'swap'
       }

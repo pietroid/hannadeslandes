@@ -25,6 +25,14 @@ h1 {
     letter-spacing:0.03em;
 }
 
+h2 {
+    color:#FFF;
+    font-family:"Libre Baskerville";
+    font-weight:400;
+    font-size:18px;
+    opacity: 0.6;
+}
+
 p {
     margin:0px;
     color:#FFF;
@@ -122,6 +130,10 @@ p {
     h1{
         width:100%;
         font-size:26px;
+    }
+    h2{
+        width:100%;
+        font-size:22px;
     }
     p{
         font-size:18px;
