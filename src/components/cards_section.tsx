@@ -38,7 +38,7 @@ export const CardsSection = () => {
                             <div className='centered_wrapper'>
                                 <GatsbyImage loading="eager" image={item.image} alt='bla' />
                                 <div style={{marginRight:10, marginLeft:10}}>
-                                <h2 className="centered_text">{item.name}</h2>
+                                <h1 style={{opacity:0.6}} className="centered_text">{item.name}</h1>
                                 </div>
                             </div>
                         </Card>
