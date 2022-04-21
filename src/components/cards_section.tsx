@@ -7,8 +7,8 @@ import { Card } from './card';
 
 export const CardsSection = () => {
     return (
-    <StaticQuery
-        query={graphql`
+        <StaticQuery
+            query={graphql`
         query AllServices {
             allFile(filter:{relativeDirectory:{eq:"services"}}) {
             edges{
@@ -26,26 +26,26 @@ export const CardsSection = () => {
             }
         }
         `}
-        render={ (data) => {
-            const services = data.allFile.edges.map(item => ({
-            name: underscoreToReadableText(item.node.name),
-            image: getImage(item.node),
-            }));
-            return (
-                <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
-                    {services.map(item => 
-                        <Card>
-                            <div className='centered_wrapper'>
-                                <GatsbyImage loading="eager" image={item.image} alt='bla' />
-                                <div style={{marginRight:10, marginLeft:10}}>
-                                <h2 className="centered_text">{item.name}</h2>
+            render={(data) => {
+                const services = data.allFile.edges.map(item => ({
+                    name: underscoreToReadableText(item.node.name),
+                    image: getImage(item.node),
+                }));
+                return (
+                    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                        {services.map(item =>
+                            <Card>
+                                <div className='content_box'>
+                                    <GatsbyImage loading="eager" image={item.image} alt='bla' />
+                                    <div style={{ marginRight: 10, marginLeft: 10 }}>
+                                        <h2 className="centered_text">{item.name}</h2>
+                                    </div>
                                 </div>
-                            </div>
-                        </Card>
-                    )}
-                </div>
-            )
-        }
-        }
-        /> );
+                            </Card>
+                        )}
+                    </div>
+                )
+            }
+            }
+        />);
 }
