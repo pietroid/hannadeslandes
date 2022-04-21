@@ -14,6 +14,7 @@ import { RoundButton } from "../components/round_button"
 import { GlowingImage } from "../components/glowing_image"
 import { Card } from "../components/card"
 import { CardsSection } from "../components/cards_section"
+import FeedbacksCarousel from "../components/feedbacks_carousel"
 /*const IndexPage = () => {
   return (
   <div>
@@ -97,6 +98,23 @@ const IndexPage = () => {
           </div>
         </div>
 
+
+        <div className="big_v_space" />
+        <div>
+          <div className="wrapper">
+            <div className="content_box">
+              <h1 className="centered_text_mobile">Recomendações</h1>
+              <div className="v_space" />
+              <p id="intro_text">Você está com problemas na sua vida? Você não consegue mais lidar com eles? Se consulte para entender os motivos dos seus problemas e para descobrir como pode resolvê-los.</p>
+              <div className="v_space" />
+
+            </div>
+
+            <div className="center_spacing" />
+
+            <FeedbacksCarousel />
+
+          </div></div>
       </div>
     </>
   )
