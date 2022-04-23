@@ -12,7 +12,6 @@ import Background from "../components/background"
 import { Button } from "../components/button"
 import { RoundButton } from "../components/round_button"
 import { GlowingImage } from "../components/glowing_image"
-import { Card } from "../components/card"
 import { CardsSection } from "../components/cards_section"
 import FeedbacksCarousel from "../components/feedbacks_carousel"
 /*const IndexPage = () => {

@@ -1,18 +1,18 @@
 .button {
-    background-color:rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px);
     border-radius: 8px;
-    padding:13px;
+    padding: 13px;
 
-    box-shadow: 0px 0px 0px 0px rgba(255,255,255,0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
     transition: background-color 0.4s, box-shadow 0.4s;
 }
 
 .round_button {
-    border-radius:40px;
-    height:25px;
+    border-radius: 40px;
+    height: 25px;
     width: 25px;
-    margin:5px;
+    margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,29 +20,30 @@
 }
 
 .card {
-    width:280px;
-    height:400px;
-    margin:10px;
+    width: 280px;
+    height: 400px;
+    margin: 10px;
     border-radius: 10px;
 
-    padding:20px;
+    padding: 20px;
 }
 
 @media(hover: hover) and (pointer: fine) {
     .button:hover {
-        background-color:rgba(255,255,255,0.2);
-        box-shadow: 0px 0px 10px 1px rgba(255,255,255,0.4);
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.4);
     }
-    .round_button:hover {
-        width:190px;
+
+    .expandable:hover {
+        width: 190px;
     }
 }
 
 /* desktop */
-@media(min-width:1100px){
+@media(min-width:1100px) {
     .round_button {
-    height:40px;
-    width: 40px;
-    margin:10px;
+        height: 40px;
+        width: 40px;
+        margin: 10px;
     }
 }
