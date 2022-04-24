@@ -6,8 +6,6 @@ import instagram from '../images/instagram_logo.svg'
 import Background from "../components/background"
 import BackButton from "../components/back_button"
 import mapaAstral from "../images/services/mapa_astral.png"
-import ServicesCarousel from "../components/services_carousel"
-import { Button } from "../components/button"
 const ServicePage = () => {
     return <>
         <div className="contact_buttons">
@@ -42,8 +40,12 @@ const ServicePage = () => {
                         Caros amigos, a contínua expansão de nossa atividade promove a alavancagem dos conhecimentos estratégicos para atingir a excelência.</p>
                     <div className="v_space" />
                 </div>
-                <img style={{ width: 450, height: 450, marginLeft: 100 }} src={mapaAstral} />
-
+                <div className="fixed_center_spacing" />
+                <div className="content_box">
+                    <div className="service_image_wrapper">
+                        <img style={{ width: '100%' }} src={mapaAstral} />
+                    </div>
+                </div>
             </div>
         </div>
 

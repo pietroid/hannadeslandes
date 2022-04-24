@@ -32,7 +32,7 @@ export const CardsSection = () => {
                     image: getImage(item.node),
                 }));
                 return (
-                    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                    <div className='card_container'>
                         {services.map(item =>
                             <Card>
                                 <div className='content_box'>

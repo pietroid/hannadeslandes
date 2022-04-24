@@ -93,7 +93,10 @@ const IndexPage = () => {
           </div>
           <div className="v_space" />
           <div className="wrapper">
+
+
             <CardsSection />
+
           </div>
         </div>
 
